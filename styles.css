@@ -20,7 +20,7 @@ main {
 }
 
 .container {
-    padding: 92px 0;
+    padding: 128px 0;
 }
 
 .row {
@@ -58,6 +58,12 @@ main {
     100% {
         transform: skew(0deg);
     }
+}
+
+h2 {
+    font-size: 48px;
+    color: var(--color-font);
+    font-weight: 900;
 }
 
 /* NAV */
@@ -126,6 +132,10 @@ nav .row {
 
 #landing .container .row {
     display: flex;
+}
+
+#landing .container {
+    padding: 92px 0;
 }
 
 .landing_container {
@@ -398,3 +408,251 @@ nav .row {
     font-size: 20px;
     font-weight: 600;
 }
+
+/* VALUES */
+
+#values .row {
+    display: flex;
+}
+
+.values_content-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.values_content-container h2 {
+    padding: 24px 0px;
+    line-height: 1.25;
+}
+
+.values_content-container p {
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.625;
+    font-weight: 400;
+}
+
+.values_image-container {
+    width: 50%;
+    height: auto;
+}
+
+.values_image-container img {
+    height: auto;
+    max-width: 100%;
+}
+
+.divider {
+    display: flex;
+}
+
+.divider span {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-font);
+    margin-left: 8px;
+}
+
+.divider img {
+    border: 0px solid transparent;
+    border-radius: 100px;
+    text-align: center;
+    padding: 8px;
+}
+
+.divider p {
+    color: #718096;
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.affordable img {
+    /* color: #276749; */
+    background-color: #9ae6b5;
+}
+
+.professionalism img {
+    /* color: #9b2c2c; */
+    background-color: #feb2b2;
+}
+
+.professionalism {
+    margin-left: 24px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+/* PRICING */
+
+#pricing .section_header p {
+    margin: 12px 0px 24px 0px;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plan {
+    max-width: 400px;
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* SEPERATORS */
+
+.plan .top,
+.plan .mid,
+.plan .bot {
+    padding: 32px 0px;
+    border: 1px solid var(--color-fade);
+}
+
+.top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: none;
+}
+
+.mid {
+    padding: 32px;
+}
+
+.bot {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top: none;
+}
+
+/* SEPERATORS*/
+
+.plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PERSONAL */
+
+.personal_band {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background: linear-gradient(115deg, #38b2ac 0%, #81e6d9 100%);
+    border-color: var(--color-fade);
+}
+
+.personal .plan-btn {
+    background: linear-gradient(115deg, #38b2ac 0%, #81e6d9 100%);
+    color: var(--color-white);
+}
+
+.personal .plan-btn:hover,
+.enterprise .plan-btn:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 12px 20px 0px;
+}
+
+/* BUSINESS */
+
+.business {
+    background-color: #6315ff;
+    background-image: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
+    border-radius: 0.5rem;
+}
+
+.business span {
+    color: var(--color-white);
+}
+
+.business .top,
+.business .mid,
+.business .bot {
+    border-color: #667eea;
+}
+
+.business .plan-btn {
+    color: var(--color-purple);
+    background-color: var(--color-white);
+    border: none;
+}
+
+.business .plan-btn:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 12px 20px 0px;
+    background-color: #F0F0F0; 
+}
+
+/* ENTERPRISE */
+
+.enterprise_band {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
+    border-color: var(--color-fade);
+}
+
+.enterprise .plan-btn {
+    background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
+    color: var(--color-white);
+}
+
+.plan_title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-title);
+}
+
+.price {
+    font-size: 48px;
+    color: var(--color-title);
+    font-weight: 700;
+}
+
+.term {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-title-secondary);
+}
+
+.feature_title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-title);
+}
+
+.plan_feature {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-title-secondary);
+}
+
+.plan-btn {
+    border: 0px solid transparent;
+    border-radius: 9999px;
+    padding: 16px 32px;
+    font-size: 14px;
+    width: 45%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
