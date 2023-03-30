@@ -62,6 +62,10 @@ h2 {
     font-weight: 900;
 }
 
+p {
+    text-align: left;
+}
+
 /* NAV */
 
 nav {
@@ -996,3 +1000,158 @@ footer .container {
 }
 
 /* MOBILE */
+
+@media (max-width: 728px) {
+    /* GENERICS */
+    * {
+        max-width: 728px;
+    }
+
+    html {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .section_title {
+        text-align: center;
+    }
+    /* LANDING */
+
+    .logo {
+        margin-left: 16px;
+    }
+    .landing_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing_container h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .landing_container h2 {
+        font-size: 14px;
+    }
+
+    .landing_container p {
+        text-align: center;
+    }
+
+    .landing_container img {
+        width: 80%;
+        padding: 0;
+        margin-top: 4px;
+    }
+
+    .input_email-container {
+        width: 100%;
+    }
+
+    .input_email:hover {
+        border-color: var(--color-purple);
+    }
+
+    nav .row {
+        flex-direction: row;
+    }
+
+    .nav_links a {
+        display: none;
+    }
+
+    .landing_container {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .landing_image {
+        width: 80%;
+    }
+
+    .landing_image img{
+       width: 100%;
+       height: auto;
+    }
+
+    /* FEATURES */
+
+    .services {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /* QUALITY WORK */
+
+    #quality_work .row{
+        flex-direction: column-reverse;
+    }
+
+    #quality_work .section_title {
+        margin-top: 24px;
+    }
+
+    #quality_work .content_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #quality_work .content_container p {
+        text-align: center;
+    }
+
+    .qw_image-container {
+        width: 70%;
+    }
+
+    /* STEPS */
+    #steps .row{
+        justify-content: center;
+    }
+
+    #steps .section_title {
+        margin-top: 24px;
+    }
+
+    .steps_content-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .steps_image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 102px;
+    }
+
+    .steps_image-container img {
+        width: 70%;
+        height: auto;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step_number {
+        margin: 0;
+    }
+}
