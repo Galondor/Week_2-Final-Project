@@ -999,9 +999,9 @@ footer .container {
     background-color: #e4e8ed;
 }
 
-/* MOBILE */
+/* TABLET */
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
     /* GENERICS */
     * {
         max-width: 728px;
@@ -1300,5 +1300,110 @@ footer .container {
     .footer_row p {
         margin: 24px 0px;
     }
+
+}
+
+/* SMALL LAPTOP */
+
+@media (max-width: 1024px) {
+    html {
+        width: 100%;
+    }
+
+    body {
+        padding: 48px;
+    }
+
+    .get_started-row {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .get_started-row span {
+        margin-bottom: 24px;
+    }
+
+    .buttons {
+        margin: 0;
+    }
+
+    .get_started-banner {
+        width: 90%;
+        height: 350px;
+    }
+
+    #get_started .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/* SMARTPHONE*/
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 0;
+    }
+
+    .service {
+        width: 60%;
+    }
+
+    .profile {
+        flex-flow: row wrap;
+    }
+
+    .controls {
+        margin-top: 16px;
+    }
+
+    .accordion_row {
+        width: 80%;
+    }
+
+    .accordion {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #FAQS p {
+        width: 80%;
+    }
+
+    #pricing p {
+        width: 80%;
+    }
+
+    #steps h2 {
+        width: 80%;
+    }
+
+    .steps_content-container {
+        align-items: center;
+    }
+
+    #features p {
+        width: 80%;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link {
+        margin: 42px 16px 0px 16px;
+        align-items: center;
+        text-align: center;
+    }
+
+
 
 }
