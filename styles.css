@@ -247,6 +247,11 @@ nav .row {
     background-color: var(--color-purple-hover);
 }
 
+.landing_content-box {
+    display: flex;
+    flex-direction: column;
+}
+
 /* FEATURES */
 
 #features .row {
