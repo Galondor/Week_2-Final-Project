@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/b6c3629dcf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/logo.svg">
+    <script src="index.js" defer></script>
     <title>Free Modern React Templates & Components for building landing pages</title>
 </head>
 <body>
@@ -19,6 +20,9 @@
                         <img src="assets/logo.svg" alt="">
                         <span>Treact</span>
                     </figure>
+                    <figure class="menu" onclick="toggleMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </figure>
                     <div class="nav_links">
                         <a href="">About</a>
                         <a href="">Blog</a>
@@ -30,13 +34,23 @@
                 </div>
             </nav>
             <header>
-                <div class="container">
+                <div class="container container_mobile">
                     <div class="row">
                         <div class="landing_container">
-                            <h1>Beautiful React Templates <span class="purple_text">for you.</span></h1>
-                            <p>Our templates are easy to setup, understand and customize.
-                            Fully modular components with a variety of pages and
-                            components.</p>
+                            <div class="mobile_menu mobile_slide-in">
+                                <a class="mobile_menu-link" href="">About</a>
+                                <a class="mobile_menu-link" href="">Blog</a>
+                                <a class="mobile_menu-link" href="">Pricing</a>
+                                <a class="mobile_menu-link" href="">Contact Us</a>
+                                <a class="mobile_menu-link" href="">Login</a>
+                                <a class="mobile_menu-link" href="">Sign Up</a>
+                            </div>
+                            <div class="landing_content-box">
+                                <h1>Beautiful React Templates <span class="purple_text">for you.</span></h1>
+                                <p>Our templates are easy to setup, understand and customize.
+                                Fully modular components with a variety of pages and
+                                components.</p>
+                            </div>
                             <div class="input_email-container">
                                 <input class="input_email" type="text" placeholder="Your E-mail Address">
                                 <button class="input_email-btn">Get Started</button>
