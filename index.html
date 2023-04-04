@@ -20,9 +20,22 @@
                         <img src="assets/logo.svg" alt="">
                         <span>Treact</span>
                     </figure>
-                    <figure class="menu" onclick="toggleMenu()">
+                    <button class="menu" onclick="openMenu()">
                         <i class="fa-solid fa-bars"></i>
-                    </figure>
+                    </button>
+                    <div class="menu_backdrop mobile_slide-in">
+                        <button class="menu menu_close" onclick="closeMenu()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <ul class="menu_links">
+                            <a href="">About</a>
+                            <a href="">Blog</a>
+                            <a href="">Pricing</a>
+                            <a href="">Contact Us</a>
+                            <a href="">Login</a>
+                            <a href="">Sign Up</a>
+                        </ul>
+                    </div>
                     <div class="nav_links">
                         <a href="">About</a>
                         <a href="">Blog</a>
@@ -34,17 +47,9 @@
                 </div>
             </nav>
             <header>
-                <div class="container container_mobile">
+                <div class="container">
                     <div class="row">
                         <div class="landing_container">
-                            <div class="mobile_menu mobile_slide-in">
-                                <a class="mobile_menu-link" href="">About</a>
-                                <a class="mobile_menu-link" href="">Blog</a>
-                                <a class="mobile_menu-link" href="">Pricing</a>
-                                <a class="mobile_menu-link" href="">Contact Us</a>
-                                <a class="mobile_menu-link" href="">Login</a>
-                                <a class="mobile_menu-link" href="">Sign Up</a>
-                            </div>
                             <div class="landing_content-box">
                                 <h1>Beautiful React Templates <span class="purple_text">for you.</span></h1>
                                 <p>Our templates are easy to setup, understand and customize.
