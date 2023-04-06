@@ -1661,4 +1661,12 @@ footer .container {
         margin: 0;
     }
 
+    .input_email-btn {
+        width: 36%;
+    }
+
+    .service_description p {
+        width: 100%;
+    }
+
 }
