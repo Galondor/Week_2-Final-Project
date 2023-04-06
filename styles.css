@@ -1627,4 +1627,38 @@ footer .container {
     .menu {
         display: flex;
     }
+
+    .get_started-row {
+        display: flex;
+        flex-wrap: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .btn-1 {
+        margin: 0;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-2 {
+        margin-top: 16px;
+    }
+
+    #user_rating {
+        padding: 0;
+    }
+
+    .values_content-container {
+        margin: 0;
+    }
+
+    #quality_work .content_container {
+        margin: 0;
+    }
+
 }
